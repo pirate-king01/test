@@ -1,0 +1,295 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+}
+
+/* Body and main layout */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: black; /* Light neutral background */
+    color: #333; /* Default text color */
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #1f1f1f; /* Dark background for navbar */
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333; /* Slightly lighter gray for the nav */
+}
+
+li {
+    float: left;
+}
+
+li:first-child {
+    margin-right: 1010px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+li a:hover:not(.active) {
+    background-color: #444; /* Darker gray when hovered */
+}
+
+.active {
+    background-color: #00aaff; /* Cool blue for active state */
+}
+
+/* Header */
+.header {
+    background-color: #00aaff; /* Blue background */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    border: 2px solid #fff;
+}
+
+.header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    background: linear-gradient(135deg, #222, #444); /* Dark gradient for about section */
+    color: #fff;
+    padding: 20px;
+    align-items: center;
+    margin-top: 0;
+    flex-direction: column;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #00aaff; /* Light blue text color for headings */
+}
+
+.img-left {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.text-right {
+    flex: 2;
+}
+
+.text-right p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #dcdcdc; /* Light gray text */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Skills Section */
+.skills {
+    background-color: #222; /* Dark background for skills */
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #00aaff; /* Light blue text for section headings */
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 5px;
+    color: #bbb; /* Soft light gray for labels */
+}
+
+/* Progress bar styling */
+.progress-bar {
+    width: 100%;
+    background-color: #444; /* Dark background for progress bars */
+    height: 25px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* Different skill levels */
+.html {
+    width: 90%;  /* Adjust according to proficiency */
+    background-color: #e34f26; /* HTML color */
+}
+
+.css {
+    width: 40%;  /* Adjust according to proficiency */
+    background-color: #264de4; /* CSS color */
+}
+
+.javascript {
+    width: 10%;  /* Adjust according to proficiency */
+    background-color: #f7df1e; /* JavaScript color */
+}
+
+.python {
+    width: 5%;  /* Adjust according to proficiency */
+    background-color: #306998; /* Python color */
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #444;
+    width: 48%;
+    box-sizing: border-box;
+    float: left;
+    background-color: #333; /* Dark background for gallery items */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+div.gallery:hover {
+    border: 1px solid #555; /* Lighter border on hover */
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    div.gallery {
+        width: 100%; /* On smaller screens, make the gallery items take up full width */
+    }
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .contact {
+        width: 90%; /* Take up more space on smaller screens */
+    }
+    .contact input, .contact textarea, .contact button {
+        width: 100%; /* Make form elements full-width on small screens */
+    }
+}
+
+/* Contact Section */
+.contact {
+    background-color: #222; /* Dark background for the contact section */
+    color: #fff;
+    padding: 40px;
+    margin-top: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    color: #00aaff; /* Light blue heading color */
+    margin-bottom: 30px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-size: 1.2em;
+    color: #bbb; /* Light gray color for the labels */
+    margin-bottom: 10px;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #444; /* Dark border */
+    border-radius: 5px;
+    background-color: #333; /* Dark background for form inputs */
+    color: #fff;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #00aaff; /* Blue border on focus */
+    outline: none;
+}
+
+/* Button Styling */
+.submit-btn {
+    background-color: #00aaff; /* Blue background for the button */
+    color: white;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background-color: #0088cc; /* Darker blue on hover */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .contact {
+        padding: 20px;
+    }
+
+    .form-group {
+        width: 90%;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+}
